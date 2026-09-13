@@ -78,17 +78,28 @@ export default function App() {
     }
   };
 
+  // const downloadExtensionfromfront = () => {
+  //   // In a real app, you would host the .zip on your backend or a cloud storage (like AWS S3/Cloudinary)
+  //   // For now, this is a placeholder URL. You should zip your 'extension' folder and put it in your frontend/public folder.
+  //   const link = document.createElement('a');
+  //  link.href = '/Growth_Chrome_Extension.zip'; Ensure this file exists in your frontend public folder
+  //   link.download = 'Growth_Chrome_Extension.zip';
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  //   setShowExtensionInfo(true);
+  // };
+
   const downloadExtension = () => {
-    // In a real app, you would host the .zip on your backend or a cloud storage (like AWS S3/Cloudinary)
-    // For now, this is a placeholder URL. You should zip your 'extension' folder and put it in your frontend/public folder.
     const link = document.createElement('a');
-    link.href = '/growth-extension.zip'; // Ensure this file exists in your frontend public folder
-    link.download = 'Growth_Chrome_Extension.zip';
+    // Replace with your actual Render backend URL
+    link.href = 'https://your-backend-api.onrender.com/api/download-extension';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
     setShowExtensionInfo(true);
   };
+
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-gray-200 font-sans flex">
