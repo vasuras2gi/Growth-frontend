@@ -78,17 +78,17 @@ export default function App() {
     }
   };
 
-  // const downloadExtensionfromfront = () => {
-  //   // In a real app, you would host the .zip on your backend or a cloud storage (like AWS S3/Cloudinary)
-  //   // For now, this is a placeholder URL. You should zip your 'extension' folder and put it in your frontend/public folder.
-  //   const link = document.createElement('a');
-  //  link.href = '/Growth_Chrome_Extension.zip'; Ensure this file exists in your frontend public folder
-  //   link.download = 'Growth_Chrome_Extension.zip';
-  //   document.body.appendChild(link);
-  //   link.click();
-  //   document.body.removeChild(link);
-  //   setShowExtensionInfo(true);
-  // };
+  const downloadExtensionfromfront = () => {
+    // In a real app, you would host the .zip on your backend or a cloud storage (like AWS S3/Cloudinary)
+    // For now, this is a placeholder URL. You should zip your 'extension' folder and put it in your frontend/public folder.
+    const link = document.createElement('a');
+    link.href = '/Growth_Chrome_Extension.zip';
+    link.download = 'Growth_Chrome_Extension.zip';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setShowExtensionInfo(true);
+  };
 
   const downloadExtension = () => {
     const link = document.createElement('a');
@@ -163,7 +163,7 @@ export default function App() {
               </div>
               <div className="relative z-10 w-full md:w-auto">
                 <button 
-                  onClick={downloadExtension}
+                  onClick={downloadExtensionfromfrontend}
                   className="w-full md:w-auto flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-indigo-600/20"
                 >
                   <Download size={18} /> Download Extension
