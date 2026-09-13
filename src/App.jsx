@@ -93,7 +93,7 @@ export default function App() {
   const downloadExtension = () => {
     const link = document.createElement('a');
     // Replace with your actual Render backend URL
-    link.href = 'https://your-backend-api.onrender.com/api/download-extension';
+    link.href = 'https://growth-backend-voda.onrender.com/api/download-extension';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
