@@ -163,7 +163,7 @@ export default function App() {
               </div>
               <div className="relative z-10 w-full md:w-auto">
                 <button 
-                  onClick={downloadExtensionfromfrontend}
+                  onClick={downloadExtension}
                   className="w-full md:w-auto flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-medium transition-all shadow-lg shadow-indigo-600/20"
                 >
                   <Download size={18} /> Download Extension
