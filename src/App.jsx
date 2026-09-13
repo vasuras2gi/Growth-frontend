@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Plus, LayoutDashboard, Target, PlayCircle, CheckCircle, Clock, Check, Star, Download, Puzzle, Info } from 'lucide-react';
 
-const API_BASE = 'http://localhost:5002/api/playlist';
+// const API_BASE = 'http://localhost:5002/api/playlist';
+const API_BASE = 'https://growth-backend-voda.onrender.com/api/playlist';
 const USER_ID = 'test_user_123'; // Replace with actual auth later
 
 export default function App() {
